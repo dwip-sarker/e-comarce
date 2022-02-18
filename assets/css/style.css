@@ -397,6 +397,7 @@ footer {
   padding: 0 30px;
   font-family: var(--font-one);
   color: white;
+  margin-top: 30px;
 }
 footer .icons_area a {
   color: white;
