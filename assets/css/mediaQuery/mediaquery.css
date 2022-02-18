@@ -1,0 +1,42 @@
+/*Product Details
+  Name: E-comarce werbsite
+  Author: Dip Sarker
+  Github: https://github.com/freelacnerdipsarker
+*/
+
+/* media query for navbar  */
+@media only screen and (max-width: 1185px) {
+  header nav .menus_area {
+    display: none;
+  }
+  header nav .icons_area_for_mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .visual_catagory .product_catagory {
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+  }
+  .catagory_product_area .products_area,
+  .catagory_product_area .heading_area {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .visual_catagory .product_catagory {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .information_section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 10px;
+  }
+  footer {
+    padding: 10px;
+  }
+  footer .icons_area i {
+    margin-left: 5px;
+  }
+}
