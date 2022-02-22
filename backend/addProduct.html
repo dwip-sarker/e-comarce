@@ -1,0 +1,153 @@
+<!-- Admin Panel
+    Project_Name: Light Weight Admin
+    Admin: Dip Sarker
+    Github: github.com/freelancerdipsarker
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font aweosme cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- core css  -->
+    <link rel="stylesheet" href="Assets/css/addproduct.css" />
+    <title>Light Weight Admin</title>
+  </head>
+  <body>
+    <main>
+      <!-- https://spruko.com/demo/zanex/zanex/LTR/Verticalmenu-Icon-Light-Sidebar/index.html# -->
+      <!-- sidebar area start  -->
+      <div class="sidebar_area">
+        <div class="logo_area">
+          <img src="assets/img/logo/logo.png" alt="" />
+          <h2>DDAdmin</h2>
+        </div>
+        <div class="menu_area">
+          <ul>
+            <li>
+              <i class="fa-solid fa-house-chimney-window"></i>
+              <a href="">Deshboard</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-plus"></i>
+              <a href="">Add Product</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-list"></i>
+              <a href="">Manage Catagory</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-file-lines"></i>
+              <a href="">Manage Product</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-user-clock"></i>
+              <a href="">Manage Users</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar area end  -->
+
+      <!-- header area start  -->
+      <header>
+        <nav>
+          <div class="search_area">
+            <form action="">
+              <input type="text" placeholder="Search for anything..." />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+          </div>
+          <div class="items_area">
+            <div class="theme b-style">
+              <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="full_screen b-style">
+              <i class="fa-solid fa-compress"></i>
+            </div>
+            <div class="notification b-style">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="message b-style">
+              <i class="fa-solid fa-message"></i>
+            </div>
+            <div class="profile">
+              <img
+                src="https://images.unsplash.com/photo-1606033380485-3248ad3b9b16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=842&q=80"
+                alt="AdminPhto"
+              />
+            </div>
+            <div class="menu b-style">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- header area end  -->
+
+      <!-- content area start  -->
+      <div class="main_content_area">
+        <h1 class="heading">Add Product</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
+          commodi sint ullam sunt, qui nisi dolorem non quam, facere aut modi
+          iure explicabo similique blanditiis ipsa voluptate. Nobis, laborum
+          temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Architecto commodi vitae adipisci eum quae eveniet! Perspiciatis
+          officia, quibusdam, voluptates, vero voluptatem impedit molestias
+          necessitatibus harum modi voluptate molestiae dolores ex!
+        </p>
+        <form action="">
+          <div class="left_input w-50">
+            <div class="input_group">
+              <label for="product_name">Product Name</label>
+              <input
+                type="text"
+                id="product_name"
+                name="name"
+                placeholder="Enter your product name.."
+              />
+            </div>
+            <div class="catagoryAndgender w-100">
+              <div class="input_group w-50">
+                <label for="product_catagory">Product Catagory</label>
+                <select id="product_catagory">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="vw">VW</option>
+                  <option value="audi" selected>Audi</option>
+                </select>
+              </div>
+              <div class="input_group w-50">
+                <label for="gender">Gender</label>
+                <select id="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="input_group">
+              <label for="brand">Brand</label>
+              <input type="text" id="brand" name="brand" />
+            </div>
+            <div class="input_group">
+              <label for="description">Description</label>
+              <textarea name="description" id="description"></textarea>
+            </div>
+          </div>
+          <div class="right_input"></div>
+        </form>
+      </div>
+      <!-- content area end  -->
+    </main>
+  </body>
+</html>

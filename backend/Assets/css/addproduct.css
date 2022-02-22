@@ -1,0 +1,261 @@
+/* Admin Panel
+    Project_Name: Light Weight Admin
+    Admin: Dip Sarker
+    Github: github.com/freelancerdipsarker
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* global class for styleing start */
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.w-50 {
+  width: 50%;
+}
+.w-100 {
+  width: 100%;
+}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #f2f3f9;
+}
+/* gogole class  */
+.b-style {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.b-style:hover {
+  background-color: #f2f3f9;
+}
+/* global class for styleing end */
+
+main {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 70px 1fr;
+  grid-template-areas:
+    "s s h h h h h h h h h h"
+    "s s c c c c c c c c c c";
+  grid-gap: 5px;
+}
+.sidebar_area {
+  grid-area: s;
+  background-color: #2a3042;
+  border: 1px solid #eaedf1;
+}
+.sidebar_area .logo_area {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.sidebar_area .logo_area img {
+  height: 35px;
+}
+.sidebar_area .logo_area h2 {
+  color: white;
+  font-size: 2.4em;
+  margin-left: 10px;
+}
+.sidebar_area ul {
+  list-style: none;
+}
+.sidebar_area ul li {
+  text-decoration: none;
+  color: #eaedf1;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eaedf11c;
+}
+.sidebar_area ul li i {
+  font-size: 1.4em;
+  margin-right: 10px;
+}
+.sidebar_area ul li a {
+  text-decoration: none;
+  color: #eaedf1;
+  font-size: 1.4em;
+  font-family: "Roboto", sans-serif;
+}
+/* header area styleing satrt */
+header {
+  grid-area: h;
+  border: 1px solid #eaedf1;
+  border-radius: 10px 0 0 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+header .search_area {
+  border: 1px solid #eaedf1;
+  max-width: 350px;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 30px;
+}
+header .search_area form {
+  width: 100%;
+  height: 100%;
+}
+header .search_area input {
+  width: 92%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+}
+header .search_area input:focus {
+  outline: none;
+}
+header .search_area i {
+  font-size: 1.5em;
+}
+
+header .items_area {
+  display: flex;
+}
+header .items_area i {
+  font-size: 1.6em;
+}
+header .profile {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+header .profile img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+/* header area styeing end  */
+
+/* main content area styleing start */
+.main_content_area {
+  height: 100%;
+  grid-area: c;
+  padding-left: 20px;
+}
+
+.main_content_area .heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.main_content_area p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  color: rgba(0, 0, 0, 0.726);
+}
+.main_content_area form {
+  /* border: 1px solid red; */
+  background-color: #fff;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eaedf1;
+  display: flex;
+}
+.main_content_area form .left_input {
+  width: 50%;
+  padding: 0 10px;
+}
+.main_content_area form .right_input {
+  width: 50%;
+  padding: 0 10px;
+}
+.main_content_area .input_group {
+  margin-bottom: 20px;
+}
+.main_content_area form label {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #292b2e;
+}
+.main_content_area form input[type="text"] {
+  border: 1px solid #eaedf1;
+  height: 40px;
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.main_content_area form select {
+  border: 1px solid #eaedf1;
+  height: 40px;
+  margin-top: 5px;
+  width: 95%;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.main_content_area form select:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.main_content_area form select option {
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+}
+.main_content_area form textarea {
+  width: 100%;
+  border: 1px solid #d8dbdf;
+  height: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-family: "Roboto", sans-serif;
+}
+.main_content_area .catagoryAndgender {
+  display: flex;
+}
